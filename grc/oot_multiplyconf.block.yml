@@ -1,0 +1,29 @@
+id: oot_multiplyconf
+label: multiplyconf
+category: '[oot]'
+
+templates:
+  imports: import oot
+  make: oot.multiplyconf(${multiplier})
+
+parameters:
+- id: multiplier
+  label: Multiplier
+  dtype: float
+  default: '0.0'
+
+inputs:
+- label: inSig
+  domain: stream
+  dtype: float
+#  vlen: ...
+#  optional: ...
+
+outputs:
+- label: outSig
+  domain: stream
+  dtype: float
+#  vlen: ...
+#  optional: ...
+
+file_format: 1

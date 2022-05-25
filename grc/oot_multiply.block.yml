@@ -1,0 +1,23 @@
+id: oot_multiply
+label: multiply
+category: '[oot]'
+
+templates:
+  imports: import oot
+  make: oot.multiply()
+
+inputs:
+- label: inSig
+  domain: stream
+  dtype: float
+  # vlen: 
+  # optional: 
+
+outputs:
+- label: outSig
+  domain: stream
+  dtype: float
+  # vlen: ...
+  # optional: ...
+
+file_format: 1
