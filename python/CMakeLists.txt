@@ -22,7 +22,7 @@ add_subdirectory(bindings)
 GR_PYTHON_INSTALL(
     FILES
     __init__.py
-    DESTINATION ${GR_PYTHON_DIR}/oot
+    multiplypy.py DESTINATION ${GR_PYTHON_DIR}/oot
 )
 
 ########################################################################
@@ -41,3 +41,4 @@ add_custom_target(
 )
 GR_ADD_TEST(qa_multiply ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_multiply.py)
 GR_ADD_TEST(qa_multiplyconf ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_multiplyconf.py)
+GR_ADD_TEST(qa_multiplypy ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_multiplypy.py)

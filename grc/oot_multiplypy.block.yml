@@ -1,0 +1,30 @@
+id: oot_multiplypy
+label: multiplypy
+category: '[oot]'
+
+templates:
+  imports: import oot
+  make: oot.multiplypy(${multiplier})
+
+parameters:
+- id: multiplier
+  label: Multiplier
+  dtype: float
+
+inputs:
+- label: inSig
+  domain: stream
+  dtype: float
+#  vlen: ...
+#  optional: ...
+
+outputs:
+- label: outSig
+  domain: stream
+  dtype: float
+#  vlen: ...
+#  optional: ...
+
+#  'file_format' specifies the version of the GRC yml format used in the file
+#  and should usually not be changed.
+file_format: 1
