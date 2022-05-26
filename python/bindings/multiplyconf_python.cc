@@ -14,7 +14,7 @@
 /* BINDTOOL_GEN_AUTOMATIC(0)                                                       */
 /* BINDTOOL_USE_PYGCCXML(0)                                                        */
 /* BINDTOOL_HEADER_FILE(multiplyconf.h)                                        */
-/* BINDTOOL_HEADER_FILE_HASH(1e9d4d66b2edb5ed8c712c2ff15280a6)                     */
+/* BINDTOOL_HEADER_FILE_HASH(838993bee40ef69ca0d1eaddecd739ad)                     */
 /***********************************************************************************/
 
 #include <pybind11/complex.h>
@@ -30,13 +30,14 @@ namespace py = pybind11;
 void bind_multiplyconf(py::module& m)
 {
 
-    using multiplyconf    = gr::oot::multiplyconf;
+    using multiplyconf    = ::gr::oot::multiplyconf;
 
 
     py::class_<multiplyconf, gr::block, gr::basic_block,
         std::shared_ptr<multiplyconf>>(m, "multiplyconf", D(multiplyconf))
 
         .def(py::init(&multiplyconf::make),
+           py::arg("multiplier"),
            D(multiplyconf,make)
         )
         
