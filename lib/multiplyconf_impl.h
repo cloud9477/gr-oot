@@ -19,7 +19,7 @@ namespace gr {
       float d_multiplier;
 
      public:
-      multiplyconf_impl(float multiplier);
+      multiplyconf_impl(float m);
       ~multiplyconf_impl();
 
       // Where all the action really happens

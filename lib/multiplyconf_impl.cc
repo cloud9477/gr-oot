@@ -11,17 +11,17 @@
 namespace gr {
   namespace oot {
     multiplyconf::sptr
-    multiplyconf::make(float multiplier)
+    multiplyconf::make(float m)
     {
-      return gnuradio::make_block_sptr<multiplyconf_impl>(multiplier
+      return gnuradio::make_block_sptr<multiplyconf_impl>(m
         );
     }
 
-    multiplyconf_impl::multiplyconf_impl(float multiplier)
+    multiplyconf_impl::multiplyconf_impl(float m)
       : gr::block("multiplyconf",
               gr::io_signature::make(1, 1, sizeof(float)),
               gr::io_signature::make(1, 1, sizeof(float))),
-              d_multiplier(multiplier)
+              d_multiplier(m)
     {}
 
     multiplyconf_impl::~multiplyconf_impl()

@@ -32,7 +32,7 @@ namespace gr {
        * class. oot::multiplyconf::make is the public interface for
        * creating new instances.
        */
-      static sptr make(float multiplier);
+      static sptr make(float m);
     };
 
   } // namespace oot

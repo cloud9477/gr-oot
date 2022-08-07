@@ -4,13 +4,13 @@ category: '[oot]'
 
 templates:
   imports: import oot
-  make: oot.multiplyconf(${multiplier})
+  make: oot.multiplyconf(${m})
 
 parameters:
-- id: multiplier
+- id: m
   label: Multiplier
   dtype: float
-  default: '0.0'
+  default: '1.0'
 
 inputs:
 - label: inSig

@@ -14,7 +14,7 @@
 /* BINDTOOL_GEN_AUTOMATIC(0)                                                       */
 /* BINDTOOL_USE_PYGCCXML(0)                                                        */
 /* BINDTOOL_HEADER_FILE(multiplyconf.h)                                        */
-/* BINDTOOL_HEADER_FILE_HASH(838993bee40ef69ca0d1eaddecd739ad)                     */
+/* BINDTOOL_HEADER_FILE_HASH(133c031e4c7c3d8169bfe78d5bf3015b)                     */
 /***********************************************************************************/
 
 #include <pybind11/complex.h>
@@ -37,7 +37,7 @@ void bind_multiplyconf(py::module& m)
         std::shared_ptr<multiplyconf>>(m, "multiplyconf", D(multiplyconf))
 
         .def(py::init(&multiplyconf::make),
-           py::arg("multiplier"),
+           py::arg("m"),
            D(multiplyconf,make)
         )
         

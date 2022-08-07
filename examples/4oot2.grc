@@ -73,9 +73,9 @@ blocks:
     affinity: ''
     alias: ''
     comment: ''
+    m: '1.5'
     maxoutbuf: '0'
     minoutbuf: '0'
-    multiplier: '1.5'
   states:
     bus_sink: false
     bus_source: false

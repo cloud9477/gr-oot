@@ -4,12 +4,14 @@ category: '[oot]'
 
 templates:
   imports: import oot
-  make: oot.multiplypy(${multiplier})
+  make: oot.multiplypy(${m})
 
 parameters:
-- id: multiplier
+- id: m
   label: Multiplier
   dtype: float
+  default: '1.0'
+
 
 inputs:
 - label: inSig
