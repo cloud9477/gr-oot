@@ -8,7 +8,7 @@
 #ifndef INCLUDED_OOT_MULTIPLYCONF_IMPL_H
 #define INCLUDED_OOT_MULTIPLYCONF_IMPL_H
 
-#include <oot/multiplyconf.h>
+#include <gnuradio/oot/multiplyconf.h>
 
 namespace gr {
   namespace oot {

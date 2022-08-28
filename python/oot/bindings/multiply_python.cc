@@ -14,7 +14,7 @@
 /* BINDTOOL_GEN_AUTOMATIC(0)                                                       */
 /* BINDTOOL_USE_PYGCCXML(0)                                                        */
 /* BINDTOOL_HEADER_FILE(multiply.h)                                        */
-/* BINDTOOL_HEADER_FILE_HASH(96afce5596c37ce7f2c3dff6577f9e57)                     */
+/* BINDTOOL_HEADER_FILE_HASH(fa74e7224c2e5807d76b50b1e9c8e367)                     */
 /***********************************************************************************/
 
 #include <pybind11/complex.h>
@@ -23,7 +23,7 @@
 
 namespace py = pybind11;
 
-#include <oot/multiply.h>
+#include <gnuradio/oot/multiply.h>
 // pydoc.h is automatically generated in the build directory
 #include <multiply_pydoc.h>
 

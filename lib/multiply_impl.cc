@@ -10,6 +10,8 @@
 
 namespace gr {
   namespace oot {
+    using input_type = float;
+    using output_type = float;
     multiply::sptr
     multiply::make()
     {
@@ -17,20 +19,28 @@ namespace gr {
         );
     }
 
+
+    /*
+     * The private constructor
+     */
     multiply_impl::multiply_impl()
       : gr::block("multiply",
-              gr::io_signature::make(1, 1, sizeof(float)),
-              gr::io_signature::make(1, 1, sizeof(float)))
+              gr::io_signature::make(1 /* min inputs */, 1 /* max inputs */, sizeof(input_type)),
+              gr::io_signature::make(1 /* min outputs */, 1 /*max outputs */, sizeof(output_type)))
     {}
 
+    /*
+     * Our virtual destructor.
+     */
     multiply_impl::~multiply_impl()
-    {}
+    {
+    }
 
     void
     multiply_impl::forecast (int noutput_items, gr_vector_int &ninput_items_required)
     {
       gr_vector_int::size_type ninputs = ninput_items_required.size();
-      for(int i=0; i < ninputs; i++)
+      for(gr_vector_int::size_type i=0; i < ninputs; i++)
       {
 	      ninput_items_required[i] = noutput_items;
       }
@@ -42,15 +52,19 @@ namespace gr {
                        gr_vector_const_void_star &input_items,
                        gr_vector_void_star &output_items)
     {
-      const float* in = static_cast<const float*>(input_items[0]);
-      float* out = static_cast<float*>(output_items[0]);
+      auto in = static_cast<const input_type*>(input_items[0]);
+      auto out = static_cast<output_type*>(output_items[0]);
 
+      // Do <+signal processing+>
       for(int i=0;i<noutput_items;i++)
       {
-        out[i] = in[i] * 2.0f;  
+        out[i] = in[i] * 1.5f;
       }
-
+      // Tell runtime system how many input items we consumed on
+      // each input stream.
       consume_each (noutput_items);
+
+      // Tell runtime system how many output items we produced.
       return noutput_items;
     }
 

@@ -12,5 +12,5 @@
 install(FILES
     api.h
     multiply.h
-    multiplyconf.h DESTINATION include/oot
+    multiplyconf.h DESTINATION include/gnuradio/oot
 )

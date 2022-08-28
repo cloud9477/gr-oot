@@ -8,16 +8,9 @@
 
 from gnuradio import gr, gr_unittest
 # from gnuradio import blocks
-try:
-    from oot import multiply
-except ImportError:
-    import os
-    import sys
-    dirname, filename = os.path.split(os.path.abspath(__file__))
-    sys.path.append(os.path.join(dirname, "bindings"))
-    from oot import multiply
+from gnuradio.oot import multiplypy
 
-class qa_multiply(gr_unittest.TestCase):
+class qa_multiplypy(gr_unittest.TestCase):
 
     def setUp(self):
         self.tb = gr.top_block()
@@ -27,7 +20,7 @@ class qa_multiply(gr_unittest.TestCase):
 
     def test_instance(self):
         # FIXME: Test will fail until you pass sensible arguments to the constructor
-        instance = multiply()
+        instance = multiplypy()
 
     def test_001_descriptive_test_name(self):
         # set up fg
@@ -36,4 +29,4 @@ class qa_multiply(gr_unittest.TestCase):
 
 
 if __name__ == '__main__':
-    gr_unittest.run(qa_multiply)
+    gr_unittest.run(qa_multiplypy)

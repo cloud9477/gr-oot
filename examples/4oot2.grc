@@ -1,6 +1,6 @@
 options:
   parameters:
-    author: cloud
+    author: ''
     catch_exceptions: 'True'
     category: '[GRC Hier Blocks]'
     cmake_opt: ''
@@ -64,7 +64,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [40, 116.0]
+    coordinate: [392, 176.0]
     rotation: 0
     state: true
 - name: oot_multiplyconf_0
@@ -80,7 +80,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [184, 316.0]
+    coordinate: [624, 388.0]
     rotation: 0
     state: true
 - name: qtgui_sink_x_0
@@ -109,7 +109,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [312, 124.0]
+    coordinate: [808, 192.0]
     rotation: 0
     state: true
 - name: qtgui_sink_x_0_0
@@ -138,7 +138,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [352, 284.0]
+    coordinate: [848, 356.0]
     rotation: 0
     state: true
 

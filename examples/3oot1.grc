@@ -64,7 +64,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [40, 148.0]
+    coordinate: [496, 252.0]
     rotation: 0
     state: true
 - name: oot_multiply_0
@@ -79,7 +79,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [200, 360.0]
+    coordinate: [720, 480.0]
     rotation: 0
     state: true
 - name: qtgui_sink_x_0
@@ -108,7 +108,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [312, 156.0]
+    coordinate: [912, 260.0]
     rotation: 0
     state: true
 - name: qtgui_sink_x_0_0
@@ -137,7 +137,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [352, 324.0]
+    coordinate: [912, 428.0]
     rotation: 0
     state: true
 

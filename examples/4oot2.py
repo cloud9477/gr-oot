@@ -38,7 +38,7 @@ from gnuradio import oot
 
 from gnuradio import qtgui
 
-class oot2(gr.top_block, Qt.QWidget):
+class 4oot2(gr.top_block, Qt.QWidget):
 
     def __init__(self):
         gr.top_block.__init__(self, "Not titled yet", catch_exceptions=True)
@@ -61,7 +61,7 @@ class oot2(gr.top_block, Qt.QWidget):
         self.top_grid_layout = Qt.QGridLayout()
         self.top_layout.addLayout(self.top_grid_layout)
 
-        self.settings = Qt.QSettings("GNU Radio", "oot2")
+        self.settings = Qt.QSettings("GNU Radio", "4oot2")
 
         try:
             if StrictVersion(Qt.qVersion()) < StrictVersion("5.0.0"):
@@ -128,7 +128,7 @@ class oot2(gr.top_block, Qt.QWidget):
 
 
     def closeEvent(self, event):
-        self.settings = Qt.QSettings("GNU Radio", "oot2")
+        self.settings = Qt.QSettings("GNU Radio", "4oot2")
         self.settings.setValue("geometry", self.saveGeometry())
         self.stop()
         self.wait()
@@ -147,7 +147,7 @@ class oot2(gr.top_block, Qt.QWidget):
 
 
 
-def main(top_block_cls=oot2, options=None):
+def main(top_block_cls=4oot2, options=None):
 
     if StrictVersion("4.5.0") <= StrictVersion(Qt.qVersion()) < StrictVersion("5.0.0"):
         style = gr.prefs().get_string('qtgui', 'style', 'raster')

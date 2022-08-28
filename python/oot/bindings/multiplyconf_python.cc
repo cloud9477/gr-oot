@@ -14,7 +14,7 @@
 /* BINDTOOL_GEN_AUTOMATIC(0)                                                       */
 /* BINDTOOL_USE_PYGCCXML(0)                                                        */
 /* BINDTOOL_HEADER_FILE(multiplyconf.h)                                        */
-/* BINDTOOL_HEADER_FILE_HASH(133c031e4c7c3d8169bfe78d5bf3015b)                     */
+/* BINDTOOL_HEADER_FILE_HASH(fe519aae45d1ea781d6bf1a1498e6916)                     */
 /***********************************************************************************/
 
 #include <pybind11/complex.h>
@@ -23,7 +23,7 @@
 
 namespace py = pybind11;
 
-#include <oot/multiplyconf.h>
+#include <gnuradio/oot/multiplyconf.h>
 // pydoc.h is automatically generated in the build directory
 #include <multiplyconf_pydoc.h>
 

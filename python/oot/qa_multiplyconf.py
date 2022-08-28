@@ -9,13 +9,13 @@
 from gnuradio import gr, gr_unittest
 # from gnuradio import blocks
 try:
-    from oot import multiplyconf
+  from gnuradio.oot import multiplyconf
 except ImportError:
     import os
     import sys
     dirname, filename = os.path.split(os.path.abspath(__file__))
     sys.path.append(os.path.join(dirname, "bindings"))
-    from oot import multiplyconf
+    from gnuradio.oot import multiplyconf
 
 class qa_multiplyconf(gr_unittest.TestCase):
 

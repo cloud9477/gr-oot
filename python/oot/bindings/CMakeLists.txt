@@ -33,7 +33,7 @@ list(APPEND oot_python_files
     multiplyconf_python.cc python_bindings.cc)
 
 GR_PYBIND_MAKE_OOT(oot
-   ../..
+   ../../..
    gr::oot
    "${oot_python_files}")
 
@@ -42,7 +42,7 @@ add_custom_target(
   copy_bindings_for_tests ALL
   COMMAND
     ${CMAKE_COMMAND} -E copy "${CMAKE_CURRENT_BINARY_DIR}/*.so"
-    ${CMAKE_BINARY_DIR}/test_modules/oot/
+    ${CMAKE_BINARY_DIR}/test_modules/gnuradio/oot/
   DEPENDS oot_python)
 
-install(TARGETS oot_python DESTINATION ${GR_PYTHON_DIR}/oot COMPONENT pythonapi)
+install(TARGETS oot_python DESTINATION ${GR_PYTHON_DIR}/gnuradio/oot COMPONENT pythonapi)
