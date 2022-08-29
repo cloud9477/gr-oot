@@ -2,10 +2,10 @@
 
 echo "analog pluto installation start for ubuntu 22.04"
 echo "install dependency"
-sudo apt-get install libxml2 libxml2-dev bison flex cmake git libaio-dev libboost-all-dev
-sudo apt-get install doxygen
-sudo apt-get install libusb-1.0-0-dev
-sudo apt-get install libavahi-common-dev libavahi-client-dev
+sudo apt-get -y install libxml2 libxml2-dev bison flex cmake git libaio-dev libboost-all-dev
+sudo apt-get -y install doxygen
+sudo apt-get -y install libusb-1.0-0-dev
+sudo apt-get -y install libavahi-common-dev libavahi-client-dev
 
 echo "install analog device driver"
 cd
@@ -32,7 +32,7 @@ make
 sudo make install
 cd ../../
 
-sudo apt-get install bison flex cmake git libgmp-dev swig
+sudo apt-get -y install bison flex cmake git libgmp-dev swig
 
 echo "getting pluto info"
 iio_info -s
