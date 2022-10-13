@@ -9,5 +9,6 @@
 install(FILES
     oot_multiply.block.yml
     oot_multiplyconf.block.yml
-    oot_multiplypy.block.yml DESTINATION share/gnuradio/grc/blocks
+    oot_multiplypy.block.yml
+    oot_multiplyconf2.block.yml DESTINATION share/gnuradio/grc/blocks
 )

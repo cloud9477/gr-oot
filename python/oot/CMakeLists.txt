@@ -42,3 +42,4 @@ add_custom_target(
 GR_ADD_TEST(qa_multiply ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_multiply.py)
 GR_ADD_TEST(qa_multiplyconf ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_multiplyconf.py)
 GR_ADD_TEST(qa_multiplypy ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_multiplypy.py)
+GR_ADD_TEST(qa_multiplyconf2 ${PYTHON_EXECUTABLE} ${CMAKE_CURRENT_SOURCE_DIR}/qa_multiplyconf2.py)

@@ -23,6 +23,7 @@ namespace py = pybind11;
 // BINDING_FUNCTION_PROTOTYPES(
     void bind_multiply(py::module& m);
     void bind_multiplyconf(py::module& m);
+    void bind_multiplyconf2(py::module& m);
 // ) END BINDING_FUNCTION_PROTOTYPES
 
 
@@ -53,5 +54,6 @@ PYBIND11_MODULE(oot_python, m)
     // BINDING_FUNCTION_CALLS(
     bind_multiply(m);
     bind_multiplyconf(m);
+    bind_multiplyconf2(m);
     // ) END BINDING_FUNCTION_CALLS
 }

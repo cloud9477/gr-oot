@@ -14,6 +14,7 @@ include(GrPlatform) #define LIB_SUFFIX
 list(APPEND oot_sources
     multiply_impl.cc
     multiplyconf_impl.cc
+    multiplyconf2_impl.cc
 )
 
 set(oot_sources "${oot_sources}" PARENT_SCOPE)

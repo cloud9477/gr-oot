@@ -30,7 +30,8 @@ include(GrPybind)
 
 list(APPEND oot_python_files
     multiply_python.cc
-    multiplyconf_python.cc python_bindings.cc)
+    multiplyconf_python.cc
+    multiplyconf2_python.cc python_bindings.cc)
 
 GR_PYBIND_MAKE_OOT(oot
    ../../..
