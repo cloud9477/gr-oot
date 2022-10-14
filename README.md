@@ -7,7 +7,8 @@ This repository is for the Wireless Communication Lab of UConn ECE department.
 
 Version
 =================
-This version supports both Ubuntu 20.04 with GR 3.9.5 and Ubuntu 22.04 with GR 3.10.
+This version supports both Ubuntu 20.04 and Ubuntu 22.04 with GR 3.10.
+For GR 3.9, please check maint-3.9 branch.
 
 Installation
 =================
